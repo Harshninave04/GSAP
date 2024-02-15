@@ -68,21 +68,62 @@ tl.from(".image5", {
 
 
 // section circle
-gsap.to("section #box", {
+
+// gsap.from("#section2 #box", {
+//   rotation: 720,
+//   scale: 1,
+//   duration: 2,
+//   delay: 0.5,
+//   scrollTrigger: "#section2 #box",
+// });
+// gsap.from("#section3 #box", {
+//   rotation: 720,
+//   scale: 1,
+//   duration: 1,
+//   delay: 0.1,
+//   scrollTrigger: "#section3 #box",
+// });
+// gsap.from("#section4 #box", {
+//   rotation: 720,
+//   scale: 1,
+//   duration: 1,
+//   delay: 0.5,
+//   scrollTrigger: "#section4 #box",
+// });
+
+gsap.from("#section2 #box", {
+  rotation: 720,
+  scale: 3,
+  duration: 2,
+  scroller:"body",
+  scrollTrigger: {
+    trigger: "#section2 #box",
+    // markers: true,
+    start: "top 60%",
+    scrub:5
+  }
+});
+gsap.from("#section3 #box", {
   rotation: 720,
   scale: 1,
-  duration: 2,
-  delay: 1,
+  duration: 1,
+  scroller:"body",
+  scrollTrigger: {
+    trigger: "#section3 #box",
+    // markers: true,
+    start: "top 60%",
+    scrub: 5,
+  },
 });
-// gsap.to("#section3 #box2", {
-//   rotation: 720,
-//   scale: 1,
-//   duration: 2,
-//   delay: 2,
-// });
-// gsap.to("#section4 #box3", {
-//   rotation: 720,
-//   scale: 1,
-//   duration: 2,
-//   delay: 3,
-// });
+gsap.from("#section4 #box", {
+  rotation: 720,
+  scale: 1,
+  duration: 1,
+  scroller:"body",
+  scrollTrigger: {
+    trigger: "#section4 #box",
+    // markers: true,
+    start: "top 90%",
+    scrub: 5,
+  },  
+});

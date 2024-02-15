@@ -105,7 +105,7 @@ h3{
     position: absolute;
     top: 20%;
     right: 5%;
-    rotate: 0deg;
+    rotate: -15deg;
 
     /* border: 1px solid white; */
     z-index: 4;
