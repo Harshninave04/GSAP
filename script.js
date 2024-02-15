@@ -29,7 +29,7 @@ tl.from(".image", {
   rotate: 30,
   duration: 0.5,
   opacity: 0,
-  delay: 0.5,
+  delay: 0,
   stagger: 0.4,
 });
 tl.from(".image2", {
@@ -37,7 +37,7 @@ tl.from(".image2", {
   rotate: 45,
   duration: 0.5,
   opacity: 0,
-  delay: 0.5,
+  delay: 0.2,
   stagger: 1,
 });
 tl.from(".image3", {
@@ -45,7 +45,7 @@ tl.from(".image3", {
   rotate: 45,
   duration: 0.5,
   opacity: 0,
-  delay: 0.5,
+  delay: 0.2,
   stagger: 1.3,
 });
 tl.from(".image4", {
@@ -53,7 +53,7 @@ tl.from(".image4", {
   rotate: 45,
   duration: 0.5,
   opacity: 0,
-  delay: 0.5,
+  delay: 0.2,
   stagger: 1.5,
 });
 tl.from(".image5", {
@@ -61,25 +61,28 @@ tl.from(".image5", {
   rotate: 45,
   duration: 0.5,
   opacity: 0,
-  delay: 0.5,
+  delay: 0.2,
   stagger: 1.7,
 });
 
-gsap.to("#section2 #box1", {
+
+
+// section circle
+gsap.to("section #box", {
   rotation: 720,
   scale: 1,
   duration: 2,
   delay: 1,
 });
-gsap.to("#section3 #box2", {
-  rotation: 720,
-  scale: 1,
-  duration: 2,
-  delay: 2,
-});
-gsap.to("#section4 #box3", {
-  rotation: 720,
-  scale: 1,
-  duration: 2,
-  delay: 3,
-});
+// gsap.to("#section3 #box2", {
+//   rotation: 720,
+//   scale: 1,
+//   duration: 2,
+//   delay: 2,
+// });
+// gsap.to("#section4 #box3", {
+//   rotation: 720,
+//   scale: 1,
+//   duration: 2,
+//   delay: 3,
+// });
