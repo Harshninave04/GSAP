@@ -156,3 +156,22 @@ gsap.to("#section3 .img2", {
     pin:true       
   }
 })
+
+
+
+// Horizontal Scroll
+
+gsap.to("#section4 p", {
+  
+  transform: "translateX(-56%)",
+  scrollTrigger: {
+    trigger: "#section4",
+    scroller: "body",
+    markers: true,
+    start: "top 0%",
+    end: "top -100%",
+    scrub: 1,
+    pin:true,
+    
+  }
+})
