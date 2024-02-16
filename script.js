@@ -127,3 +127,32 @@ gsap.from("#section4 #box", {
     scrub: 5,
   },  
 });
+
+
+// section images
+
+
+gsap.to("#section2 .img1", {
+  width: "90%",
+  scrollTrigger: {
+    trigger:"#section2",
+    scroller: "body",
+    markers:true,
+    start: "top 0%",
+    end: "top -100%",
+    scrub: 1,
+    pin:true       
+  }
+})
+gsap.to("#section3 .img2", {
+  width: "80%",
+  scrollTrigger: {
+    trigger:"#section3",
+    scroller: "body",
+    markers:true,
+    start: "top 0%",
+    end: "top -100%",
+    scrub: 1,
+    pin:true       
+  }
+})

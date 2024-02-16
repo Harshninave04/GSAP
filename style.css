@@ -10,7 +10,6 @@
 body{
     height: 100%;
     max-width: 100%;
-    margin: 10px 20px;
     /* overflow: hidden; */
 }
 
@@ -19,6 +18,8 @@ body{
 #section1{
     height: 100vh;
     max-width: 100%;
+    margin: 10px 20px;
+    margin-bottom: 0;
 }
 #nav{
     display: flex;
@@ -131,4 +132,21 @@ h3{
 
     /* border: 1px solid white; */
     z-index: 6;
+}
+
+
+
+
+/* section images */
+
+section .img1{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+section .img2{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0;
 }
