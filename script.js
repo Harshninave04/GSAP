@@ -135,43 +135,39 @@ gsap.from("#section4 #box", {
 gsap.to("#section2 .img1", {
   width: "90%",
   scrollTrigger: {
-    trigger:"#section2",
+    trigger: "#section2",
     scroller: "body",
-    markers:true,
+    // markers:true,
     start: "top 0%",
     end: "top -100%",
     scrub: 1,
-    pin:true       
-  }
-})
+    pin: true,
+  },
+});
 gsap.to("#section3 .img2", {
   width: "80%",
   scrollTrigger: {
-    trigger:"#section3",
+    trigger: "#section3",
     scroller: "body",
-    markers:true,
+    // markers:true,
     start: "top 0%",
     end: "top -100%",
     scrub: 1,
-    pin:true       
-  }
-})
-
-
+    pin: true,
+  },
+});
 
 // Horizontal Scroll
 
 gsap.to("#section4 p", {
-  
   transform: "translateX(-56%)",
   scrollTrigger: {
     trigger: "#section4",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 0%",
     end: "top -100%",
     scrub: 1,
-    pin:true,
-    
-  }
-})
+    pin: true,
+  },
+});
