@@ -91,42 +91,42 @@ tl.from(".image5", {
 //   scrollTrigger: "#section4 #box",
 // });
 
-gsap.from("#section2 #box", {
-  rotation: 720,
-  scale: 3,
-  duration: 2,
-  scroller:"body",
-  scrollTrigger: {
-    trigger: "#section2 #box",
-    // markers: true,
-    start: "top 60%",
-    scrub:5
-  }
-});
-gsap.from("#section3 #box", {
-  rotation: 720,
-  scale: 1,
-  duration: 1,
-  scroller:"body",
-  scrollTrigger: {
-    trigger: "#section3 #box",
-    // markers: true,
-    start: "top 60%",
-    scrub: 5,
-  },
-});
-gsap.from("#section4 #box", {
-  rotation: 720,
-  scale: 1,
-  duration: 1,
-  scroller:"body",
-  scrollTrigger: {
-    trigger: "#section4 #box",
-    // markers: true,
-    start: "top 90%",
-    scrub: 5,
-  },  
-});
+// gsap.from("#section2 #box", {
+//   rotation: 720,
+//   scale: 3,
+//   duration: 2,
+//   scroller:"body",
+//   scrollTrigger: {
+//     trigger: "#section2 #box",
+//     // markers: true,
+//     start: "top 60%",
+//     scrub:5
+//   }
+// });
+// gsap.from("#section3 #box", {
+//   rotation: 720,
+//   scale: 1,
+//   duration: 1,
+//   scroller:"body",
+//   scrollTrigger: {
+//     trigger: "#section3 #box",
+//     // markers: true,
+//     start: "top 60%",
+//     scrub: 5,
+//   },
+// });
+// gsap.from("#section4 #box", {
+//   rotation: 720,
+//   scale: 1,
+//   duration: 1,
+//   scroller:"body",
+//   scrollTrigger: {
+//     trigger: "#section4 #box",
+//     // markers: true,
+//     start: "top 90%",
+//     scrub: 5,
+//   },  
+// });
 
 
 // section images
