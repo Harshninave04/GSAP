@@ -2,10 +2,10 @@ let tl = gsap.timeline();
 
 tl.from("h3", {
   y: -70,
-  duration: 1,
+  duration: 1.2,
   delay: 0.3,
   opacity: 1,
-  stagger: 0.1,
+  stagger: 0.2,
 });
 // tl.from("#hero .soft", {
 //   x: 1,
@@ -65,8 +65,6 @@ tl.from(".image5", {
   stagger: 1.7,
 });
 
-
-
 // section circle
 
 // gsap.from("#section2 #box", {
@@ -125,22 +123,20 @@ tl.from(".image5", {
 //     // markers: true,
 //     start: "top 90%",
 //     scrub: 5,
-//   },  
+//   },
 // });
-
 
 // section images
 
-
 gsap.to("#section2 .img1", {
-  width: "90%",
+  width: "100%",
   scrollTrigger: {
     trigger: "#section2",
     scroller: "body",
     // markers:true,
     start: "top 0%",
     end: "top -100%",
-    scrub: 1,
+    scrub: 5,
     pin: true,
   },
 });
