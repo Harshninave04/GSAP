@@ -15,11 +15,24 @@ section{
 }
 
 #page1{
-    background-color: rgb(255, 255, 92);
+    background-color: rgb(142, 142, 142);
 }
 #page2{
     background-color: rgb(255, 255, 149);
 }
 #page3{
     background-color: rgb(255, 255, 199);
+}
+
+.image-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
