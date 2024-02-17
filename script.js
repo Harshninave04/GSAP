@@ -1,3 +1,28 @@
+gsap.registerPlugin(ScrollTrigger);
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+});
+locoScroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy("#main", {
+  scrollTop(value) {
+    return arguments.length
+      ? locoScroll.scrollTo(value, 0, 0)
+      : locoScroll.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+  },
+
+  pinType: document.querySelector("#main").style.transform ? "transform" : "fixed",
+});
+
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+ScrollTrigger.refresh();
+
 let tl = gsap.timeline();
 
 tl.from("h3", {
@@ -132,7 +157,7 @@ gsap.to("#section2 .img1", {
   width: "100%",
   scrollTrigger: {
     trigger: "#section2",
-    scroller: "body",
+    scroller: "#main",
     // markers:true,
     start: "top 0%",
     end: "top -100%",
@@ -144,7 +169,7 @@ gsap.to("#section3 .img2", {
   width: "80%",
   scrollTrigger: {
     trigger: "#section3",
-    scroller: "body",
+    scroller: "#main",
     // markers:true,
     start: "top 0%",
     end: "top -100%",
@@ -159,7 +184,7 @@ gsap.to("#section4 p", {
   transform: "translateX(-56%)",
   scrollTrigger: {
     trigger: "#section4",
-    scroller: "body",
+    scroller: "#main",
     // markers: true,
     start: "top 0%",
     end: "top -100%",
